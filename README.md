@@ -10,8 +10,8 @@
 # listing block devices
 lsblk
 
-# **if:** in-file
-# **of:** out-file
-sudo dd if=/path/to/linux/distro/iso/image/file.iso of=/dev/sdb 
+# if: file to load the image from
+# of: partition to mount the image in
+sudo dd if=/path/to/linux/distro/iso/image/file.iso of=/dev/sdb1 
 ```
 
