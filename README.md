@@ -5,11 +5,13 @@
 ## Uncategorized
 
 `# **lsblk:** listing information about block devices`
+
 `# **if:** in-file`
+
 `**of:** out-file`
 
 ```bash
-``
+`# listing block devices`
 lsblk
 sudo dd if=/path/to/linux/distro/iso/image/file.iso of=/dev/sdb 
 ```
