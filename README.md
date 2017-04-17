@@ -4,15 +4,14 @@
 
 ## Uncategorized
 
-`# **lsblk:** listing information about block devices`
-
-`# **if:** in-file`
-
-`# **of:** out-file`
+`# making a bootable usb drive by simply mounting an image`
 
 ```bash
 # listing block devices
 lsblk
+
+# **if:** in-file
+# **of:** out-file
 sudo dd if=/path/to/linux/distro/iso/image/file.iso of=/dev/sdb 
 ```
 
