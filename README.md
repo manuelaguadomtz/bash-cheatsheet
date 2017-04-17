@@ -8,10 +8,10 @@
 
 `# **if:** in-file`
 
-`**of:** out-file`
+`# **of:** out-file`
 
 ```bash
-`# listing block devices`
+# listing block devices
 lsblk
 sudo dd if=/path/to/linux/distro/iso/image/file.iso of=/dev/sdb 
 ```
