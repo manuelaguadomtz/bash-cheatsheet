@@ -68,3 +68,13 @@ sudo dd if=/path/to/linux/distro/iso/image/file.iso of=/dev/sdb1
 ```bash
 convert mainview.png eps2:mainview.eps
 ```
+
+#### Convert EPUB to PDF
+
+```bash
+# Installing calibre
+sudo apt-get -y install calibre
+
+# Converting
+ebook-convert <file>.epub <file>.pdf
+```
