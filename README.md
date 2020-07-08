@@ -69,6 +69,16 @@ sed -n 1,10p input_file.txt
 pwd
 ```
 
+#### Transfer files (scp)
+
+```bash
+# Copy single file from local to remote
+scp myfile.txt remoteuser@remoteserver:/remote/directory/
+
+# Copy single file from remote to local
+scp remoteuser@remoteserver:/remote/directory/myfile.txt  myfile.txt
+```
+
 ## Installing packages (Ubuntu)
 
 #### Installing subversion
