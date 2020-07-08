@@ -56,6 +56,13 @@ grep -i 'text_to_find' input_file.txt
 grep 'text_to_find' input_file.txt  # Case sensitive
 ```
 
+#### Print n lines of a file
+
+```bash
+# Print the first 20 line of a file
+sed -n 1,10p input_file.txt
+```
+
 ## Installing packages (Ubuntu)
 
 #### Installing subversion
