@@ -63,6 +63,12 @@ grep 'text_to_find' input_file.txt  # Case sensitive
 sed -n 1,10p input_file.txt
 ```
 
+#### Displaying path of the current directory
+
+```bash
+pwd
+```
+
 ## Installing packages (Ubuntu)
 
 #### Installing subversion
