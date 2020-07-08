@@ -41,6 +41,21 @@ sed 's/text_to_find/replace_text/g' input_file.txt > output_file.txt
 sed -i 's/text_to_find/replace_text/gI' input_file.txt
 ```
 
+#### Find text in files
+
+```bash
+# Find files containing specific text
+grep -iRl 'text_to_find' directory
+
+# -i - ignore text case
+# -R - recursively search files in subdirectories.
+# -l - show file names instead of file contents portions.
+
+# Find sepcific text within a file
+grep -i 'text_to_find' input_file.txt
+grep 'text_to_find' input_file.txt  # Case sensitive
+```
+
 ## Installing packages (Ubuntu)
 
 #### Installing subversion
