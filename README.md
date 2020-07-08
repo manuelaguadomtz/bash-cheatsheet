@@ -28,6 +28,19 @@ find . -name "*.pyc" -type f
 find . -name "*.pyc" -type f -delete
 ```
 
+#### Find and replace text within a file
+
+```bash
+# To update the input file
+sed -i 's/text_to_find/replace_text/g' input_file.txt
+
+# To update the input file
+sed 's/text_to_find/replace_text/g' input_file.txt > output_file.txt
+
+# case-insensitive
+sed -i 's/text_to_find/replace_text/gI' input_file.txt
+```
+
 ## Installing packages (Ubuntu)
 
 #### Installing subversion
