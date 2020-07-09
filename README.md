@@ -34,11 +34,14 @@ find . -name "*.pyc" -type f -delete
 # To update the input file
 sed -i 's/text_to_find/replace_text/g' input_file.txt
 
-# To update the input file
+# To create a new file  with the changes
 sed 's/text_to_find/replace_text/g' input_file.txt > output_file.txt
 
 # case-insensitive
 sed -i 's/text_to_find/replace_text/gI' input_file.txt
+
+# Replacing commas by dots in floats
+sed -i -r 's/([0-9]),([0-9])/\1.\2/g' input_file.txt
 ```
 
 #### Find text in files
