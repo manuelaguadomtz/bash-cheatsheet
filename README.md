@@ -53,6 +53,7 @@ grep -iRl 'text_to_find' directory
 # -i - ignore text case
 # -R - recursively search files in subdirectories.
 # -l - show file names instead of file contents portions.
+# -n - prints the line numbers
 
 # Find sepcific text within a file
 grep -i 'text_to_find' input_file.txt
