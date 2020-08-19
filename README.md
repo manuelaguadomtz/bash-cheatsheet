@@ -82,6 +82,20 @@ scp myfile.txt remoteuser@remoteserver:/remote/directory/
 scp remoteuser@remoteserver:/remote/directory/myfile.txt  myfile.txt
 ```
 
+#### Downloading files
+
+## Download a file
+
+```bash
+wget http://example.com/file
+```
+
+## Knowing the file lenght before download it
+
+```bash
+wget http://example.com/file --spider --server-response -O - 2>&1 | sed -ne '/Content-Length/{s/.*: //;p}'
+```
+
 ## Installing packages (Ubuntu)
 
 #### Installing subversion
