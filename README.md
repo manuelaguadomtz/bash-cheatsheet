@@ -91,6 +91,17 @@ scp remoteuser@remoteserver:/remote/directory/myfile.txt  myfile.txt
 wget http://example.com/file
 ```
 
+#### Downloading an http server directory
+
+```bash
+# from https://superuser.com/questions/655554/download-all-folders-subfolders-and-files-using-wget
+
+wget -r --no-parent http://www.mysite.com/Pictures/
+
+# Tto retrieve the content, without downloading the "index.html" files:
+wget -r --no-parent --reject "index.html*" http://www.mysite.com/Pictures/
+```
+
 #### Knowing the file lenght before download it
 
 ```bash
