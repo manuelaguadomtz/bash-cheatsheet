@@ -73,6 +73,13 @@ sed -n 1,10p input_file.txt
 pwd
 ```
 
+#### Using Tar command to compress and extract files
+
+```bash
+tar -czvf name-of-archive.tar.gz /path/to/directory-or-file  # compressing
+tar -xzvf name-of-archive.tar.gz  # extracting
+```
+
 ## Downloading and transfering files
 
 #### Transfer files (scp)
